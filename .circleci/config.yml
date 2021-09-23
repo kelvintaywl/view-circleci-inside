@@ -8,8 +8,8 @@ jobs:
       - run:
           name: Explore
           command: |
-            ls
-            cd .. && ls
+            pwd
+            cd ../.. && ls
             cd / && ls
 
 workflows:
