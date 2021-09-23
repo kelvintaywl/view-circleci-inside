@@ -6,10 +6,11 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          name: Greet
-          command: echo "I love ${COLOR} builds."
-          environment:
-            COLOR: "green"
+          name: Explore
+          command: |
+            ls
+            cd .. && ls
+            cd / && ls
 
 workflows:
   main:
